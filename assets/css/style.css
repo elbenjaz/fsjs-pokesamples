@@ -1,0 +1,79 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-hollow');
+@import url('https://fonts.cdnfonts.com/css/roboto');
+
+body {
+    margin: 20px 0 !important;
+    font-family: 'Roboto', sans-serif !important;
+    background-image: url("../img/bg.png");
+}
+
+.container > div {
+    background-color: #fff;
+    margin: 40px 0;
+    padding: 10px 0;
+    border: 6px #f5f5f5 solid;
+}
+
+.title {
+    font-size: 40px;
+    font-family: 'Pokemon Hollow', sans-serif;
+}
+.title span {
+    color: #f73435;
+}
+
+img.cache {
+    display: none;
+}
+
+/* image */
+#pokemon {
+    height: 200px;
+	cursor: pointer;    
+}
+#pokemon.caught {
+    border: 2px #f73435 solid;
+    border-radius: 100%;
+    animation: scale .1s ease-in-out forwards;
+}
+
+/* stickers */
+#stickers img {
+    height: 200px;
+    border: 6px #f5f5f5 solid;
+}
+#stickers input {
+    width: 100px;
+}
+#stickers p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#stickers #stickers-cart {
+    height: 30px;
+}
+
+/* password */
+#password > div:first-of-type {
+    display: flex;
+    margin: auto;
+}
+#password #password-feedback-txt {
+    height: 30px;   
+}
+#password #password-feedback-img {
+    height: 200px;
+}
+#password #password-feedback-img.released {
+    animation: scale .1s ease-in-out forwards;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
